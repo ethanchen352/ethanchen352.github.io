@@ -1,0 +1,48 @@
+p {
+  color: #231F20;
+}
+
+body {
+  width: 8.5in;
+  height: 11in;
+
+  margin:auto;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  height: 1.5in;
+
+  padding: .5in;
+
+  background-color: #3E5C60;
+
+  border: 1px solid red;
+}
+
+header h1 {
+  display: inline-block;
+
+  color: white;
+  font-size: 49.1pt;
+
+  border: 1px solid yellow;
+}
+
+header div {
+  display: inline-block;
+  float: right;
+
+  border: 1px solid yellow;
+}
+
+header p {
+  text-align: right;
+  color: white;
+}
+
+#body {
+  padding-left: .5in;
+  padding-right: .5in;
+}
