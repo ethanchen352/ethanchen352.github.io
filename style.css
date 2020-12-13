@@ -12,8 +12,10 @@ p {
 h1 {
   margin: 0px;
 
+  transform: translateY(-25%);
+
   color: white;
-  font-size: 49.1pt;
+  font-size: 46.8pt;
 }
 
 h2 {
@@ -35,8 +37,8 @@ section {
 }
 
 header {
-  height: 1.5in;
-  padding: .5in .5in 0in .5in;
+  height: .5in;
+  padding: .5in;
 
   background-color: #3E5C60;
 }
@@ -44,6 +46,9 @@ header {
 header p {
   margin: 0px;
 
+  transform: translateY(-25%);
+
+  line-height: 12pt;
   text-align: right;
   color: white;
 }
