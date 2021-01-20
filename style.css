@@ -2,7 +2,30 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-#intro {
-  text-align: center;
-  font-size: 120px
+body {
+  margin: 6em;
+
+  background-color: #212322;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  position: fixed;
+}
+
+nav ul {
+  list-style-type: none;
+
+  font-size: 1.5em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  gap: 6em;
 }
