@@ -1,7 +1,7 @@
 :root {
-  --black: #25282A;
-  --lightestgray: #D9D9D6;
-  --lightgray: #C8C9C7;
+  --darkgray0: #25282A;
+  --lightgray0: #D9D9D6;
+  --lightgray1: #C8C9C7;
   --color-accent: #8FCAB9;
 }
 
@@ -14,7 +14,7 @@ body {
 
   font-family: 'Open Sans', sans-serif;
 
-  background-color: var(--black);
+  background-color: var(--darkgray0);
   color: white;
 }
 
@@ -24,11 +24,11 @@ a {
 }
 
 a:hover {
-  color: var(--lightestgray);
+  color: var(--lightgray0);
 }
 
 a:active {
-  color: var(--lightgray);
+  color: var(--lightgray1);
 }
 
 nav {

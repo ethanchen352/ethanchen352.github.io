@@ -43,20 +43,7 @@
           <h1 id='name'>Hi, I'm Ethan.</h1>
           <p id='title'></p>
 
-          <script>
-            let titles = ["Creator", "Graphic Designer", "Coder", "Video Editor", "Dreamer", "Web Developer", "Procrastinator"];
-            setInterval(randomTitle, 3000);
-
-            document.getElementById('title').innerHTML = titles[Math.floor(Math.random() * titles.length)];
-            function randomTitle() {
-              let text = document.getElementById('title').innerHTML;
-              let newText;
-              do {
-                newText = titles[Math.floor(Math.random() * titles.length)];
-              } while (newText === text);
-              document.getElementById('title').innerHTML = newText;
-            }
-          </script>
+          <script src="index.js"></script>
         </header>
       </div>
     </div>
