@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>Ethan Chen</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='style.css'>
+    <link rel='preconnect' href='https://fonts.gstatic.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap' rel='stylesheet'>
   </head>
 
   <style>
@@ -24,25 +24,41 @@
   </style>
 
   <body>
-    <header>
-      <h1 id="name">Hi, I'm Ethan Chen.</h1>
-      <p id="title">Creator</p>
-    </header>
-
-    <div class="grid">
+    <div class='grid'>
       <div>
         <nav>
           <ul>
-            <li><span class="currentPage">Home</span></li>
-            <li><a href="resume.html">Resume</a></li>
+            <li><span class='currentPage'>Home</span></li>
+            <li><a href='resume.html'>Resume</a></li>
+          </ul>
+          <ul>
+            <li><a href='https://www.linkedin.com/in/ethanchen352/' target='_blank'>LinkedIn</a></li>
+            <li><a href='https://www.instagram.com/efunchen/' target='_blank'>Instagram</a></li>
           </ul>
         </nav>
       </div>
+
       <div>
-        <!-- insert content here -->
+        <header>
+          <h1 id='name'>Hi, I'm Ethan.</h1>
+          <p id='title'></p>
+
+          <script>
+            let titles = ["Creator", "Graphic Designer", "Coder", "Video Editor", "Dreamer", "Web Developer", "Procrastinator"];
+            setInterval(randomTitle, 3000);
+
+            document.getElementById('title').innerHTML = titles[Math.floor(Math.random() * titles.length)];
+            function randomTitle() {
+              let text = document.getElementById('title').innerHTML;
+              let newText;
+              do {
+                newText = titles[Math.floor(Math.random() * titles.length)];
+              } while (newText === text);
+              document.getElementById('title').innerHTML = newText;
+            }
+          </script>
+        </header>
       </div>
     </div>
-
-
   </body>
 </html>

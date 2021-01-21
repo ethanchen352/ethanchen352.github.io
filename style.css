@@ -1,11 +1,20 @@
 :root {
-  font-family: 'Open Sans', sans-serif;
+  --black: #25282A;
+  --lightestgray: #D9D9D6;
+  --lightgray: #C8C9C7;
+  --color-accent: #8FCAB9;
+}
+
+::selection {
+  background: var(--color-accent);
 }
 
 body {
   margin: 6em;
 
-  background-color: #212322;
+  font-family: 'Open Sans', sans-serif;
+
+  background-color: var(--black);
   color: white;
 }
 
@@ -15,11 +24,11 @@ a {
 }
 
 a:hover {
-  color: #D9D9D6;
+  color: var(--lightestgray);
 }
 
 a:active {
-  color: #C8C9C7;
+  color: var(--lightgray);
 }
 
 nav {
@@ -34,8 +43,27 @@ nav ul {
   font-size: 1.5em;
 }
 
+h1 {
+  margin: 0em;
+
+  font-size: 4em;
+}
+
+h2 {
+  margin: 0.25em 0em;
+
+  font-size: 2em;
+  color: var(--color-accent);
+}
+
+h3 {
+  margin: 0.125em 0em;
+
+  font-size: 1.5em;
+}
+
 section {
-  margin: 2em;
+  margin: 2em 1em;
 }
 
 .grid {
@@ -45,7 +73,7 @@ section {
 }
 
 .currentPage {
-  color: #8FCAB9;
+  color: var(--color-accent);
 }
 
 .clearfix::after {
