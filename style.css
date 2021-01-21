@@ -1,100 +1,83 @@
-body {
-  background-color: lightgray;
+:root {
+  --darkgray0: #25282A;
+  --lightgray0: #D9D9D6;
+  --lightgray1: #C8C9C7;
+  --color-accent: #8FCAB9;
 }
 
-p {
-  margin-top: 0px;
+::selection {
+  background: var(--color-accent);
+}
 
-  color: #231F20;
-  font-size: 12pt;
+body {
+  margin: 6em;
+
+  font-family: 'Open Sans', sans-serif;
+
+  background-color: var(--darkgray0);
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--lightgray0);
+}
+
+a:active {
+  color: var(--lightgray1);
+}
+
+nav {
+  position: fixed;
+  bottom: 50%;
+}
+
+nav ul {
+  padding: 0em;
+
+  list-style-type: none;
+  font-size: 1.5em;
 }
 
 h1 {
-  margin: 0px;
+  margin: 0em;
 
-  transform: translateY(-25%);
-
-  color: white;
-  font-size: 46.8pt;
+  font-size: 4em;
 }
 
 h2 {
-  margin: 0px;
+  margin: 0.25em 0em;
 
-  color: #3E5C60;
-  font-size: 20pt;
+  font-size: 2em;
+  color: var(--color-accent);
 }
 
 h3 {
-  margin: 0px;
+  margin: 0.125em 0em;
 
-  color: #231F20;
-  font-size: 14pt;
+  font-size: 1.5em;
 }
 
 section {
-  margin-bottom: .5in;
+  margin: 2em 1em;
 }
 
-header {
-  height: .5in;
-  padding: .5in;
-
-  background-color: #3E5C60;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  gap: 3em;
 }
 
-header p {
-  margin: 0px;
-
-  transform: translateY(-25%);
-
-  line-height: 12pt;
-  text-align: right;
-  color: white;
+.currentPage {
+  color: var(--color-accent);
 }
 
-.page {
-  width: 8.5in;
-  margin:auto;
-
-  background-color: white;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.experience {
-  margin-left: .5in;
-}
-
-.left-column {
-  display: inline-block;
-
-  width: 2.25in;
-}
-
-.right-column {
-  display: inline-block;
-  float: right;
-
-  width: 5in;
-}
-
-#name {
-  display: inline-block;
-  float: left;
-
-  /*border: 1px solid yellow;*/
-}
-
-#contact {
-  display: inline-block;
-  float: right;
-
-  position: relative;
-  top: 10px;
-
-  /*border: 1px solid yellow;*/
-}
-
-#content {
-  padding: .5in;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }

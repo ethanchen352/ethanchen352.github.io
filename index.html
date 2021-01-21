@@ -1,72 +1,51 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Ethan Chen</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel='preconnect' href='https://fonts.gstatic.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap' rel='stylesheet'>
+  </head>
 
-<head>
-  <title>Ethan Chen - Resume</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
+  <style>
+    #name {
+      text-align: center;
+      margin-bottom: 0em;
 
-<body>
-  <div class="page">
-    <header>
-      <div id="name"><h1>Ethan Chen</h1></div>
-      <div id="contact">
-        <p>ethanchen352@gmail.com<br><br>
-          651-983-6219</p>
-      </div>
-    </header>
+      font-size: 6em;
+    }
 
-    <div id="content">
-      <p>GDES 2342 - My <a href="resume%2012-5-20.pdf">actual resume</a> is included as a PDF for reference in case you wanted to compare. It was created with Affinity Publisher. I've also included the <a href="resume%20design%20history.png">history of my resume design</a> since 2018. Both of these can be found in the <a href="https://github.com/ethanchen352/ethanchen352.github.io">Github repository</a> for this website.</p>
-      <section>
-        <h2>Experience</h2>
-        <h3>Intern at Holmes Center for Entrepreneurship | Oct 2019 - present</h3>
-        <p class="experience">Helped develop the MIN-Corps and Toaster Innovation Hub websites using Drupal CMS and Git. Responsible for creating and sending weekly newsletter to over 5,000 students and faculty. Designing graphics for social media and events. Forming teams with other interns for most projects, taking on both leading and supporting roles.</p>
+    #title {
+      text-align: center;
+      margin-top: 0em;
 
-        <h3>Courtesy Clerk, Stocker at Hy-Vee | Aug 2016 - May 2019</h3>
-        <p class="experience">Physical work and miscellaneous tasks as needed, providing customer service and assisting other departments that might need help.</p>
-      </section>
+      font-size: 3em;
+    }
+  </style>
 
-      <div class="left-column">
-        <section>
-          <h2>Skills</h2>
-          <p>Python, Java, C, x86 Assembly, C#, OCaml, C++</p>
-          <p>HTML, CSS, Drupal, learning AWS</p>
-          <p>Adobe Suite, Affinity Suite<br>
-            (I designed this resume!) <strong>(And for this project, I coded it!)</strong></p>
-        </section>
-
-        <section>
-          <h2>Traits</h2>
-          <p>Attention to detail, thoroughness, flexibility, patience, integrity, self-motivation</p>
-        </section>
+  <body>
+    <div class='grid'>
+      <div>
+        <nav>
+          <ul>
+            <li><span class='currentPage'>Home</span></li>
+            <li><a href='resume.html'>Resume</a></li>
+          </ul>
+          <ul>
+            <li><a href='https://www.linkedin.com/in/ethanchen352/' target='_blank'>LinkedIn</a></li>
+            <li><a href='https://www.instagram.com/efunchen/' target='_blank'>Instagram</a></li>
+          </ul>
+        </nav>
       </div>
 
-      <div class="right-column">
-        <section>
-          <h2>Academics</h2>
-          <p>University of Minnesota - Twin Cities (expected May 2022)</p>
-          <p>BS in Computer Science | Interdisciplinary Design Minor</p>
-          <p>Related coursework: Program Design & Development, Algorithms & Data Structures, Intro to Operating Systems</p>
-        </section>
+      <div>
+        <header>
+          <h1 id='name'>Hi, I'm Ethan.</h1>
+          <p id='title'></p>
 
-        <section>
-          <h2>Projects</h2>
-          <p>AI organism simulation in Unity using C#</p>
-          <p>Complete website redesign for Green Garden Bakery</p>
-          <p>Battery display written in C then rewritten in x86 Assembly</p>
-          <p>Algorithmic trading program in Python</p>
-        </section>
+          <script src="index.js"></script>
+        </header>
       </div>
-
-      <section style="margin-bottom: 0px;">
-        <h2>Activities</h2>
-        <p>Marching band/Drumline, Church leadership, Design U, Boxing, Chinese American Student Association</p>
-      </section>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
