@@ -1,4 +1,12 @@
+footer {
+  text-align: center;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: auto auto auto;
+}
+
+ul.horizontal li {
+  display: inline-block;
 }
