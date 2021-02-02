@@ -1,50 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ethan Chen</title>
     <link rel='stylesheet' href='style.css'>
-    <link rel='preconnect' href='https://fonts.gstatic.com'>
-    <link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap' rel='stylesheet'>
   </head>
 
-  <style>
-    #name {
-      text-align: center;
-      margin-bottom: 0em;
-
-      font-size: calc(3em + 3vw);
-    }
-
-    #title {
-      text-align: center;
-      margin-top: 0em;
-
-      font-size: calc(1.5em + 1.5vw);
-    }
-  </style>
-
   <body>
-    <div class='grid-main'>
+    <div class='grid'>
       <div>
         <nav>
-          <ul>
-            <li><span class='currentPage'>Home</span></li>
-            <li><a href='resume.html'>Resume</a></li>
-          </ul>
-          <ul>
-            <li><a href='https://www.linkedin.com/in/ethanchen352/' target='_blank'>LinkedIn</a></li>
-            <li><a href='https://www.instagram.com/efunchen/' target='_blank'>Instagram</a></li>
+          <ul class='horizontal'>
+            <li>Home</li>
+            <li>Resume</li>
           </ul>
         </nav>
       </div>
-
       <div>
-        <header>
-          <h1 id='name'>Hi, I'm Ethan.</h1>
-          <p id='title'></p>
-
-          <script src="index.js"></script>
-        </header>
+        <p>Hi, I'm Ethan.</p>
+      </div>
+      <div>
+        <footer>
+          <ul class='horizontal'>
+            <li>LinkedIn</li>
+            <li>Instagram</li>
+          </ul>
+        </footer>
       </div>
     </div>
   </body>
