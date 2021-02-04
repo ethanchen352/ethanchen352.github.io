@@ -1,5 +1,18 @@
+:root {
+  --black0: #212425;
+}
+
+body {
+  background-color: var(--black0);
+  color: white;
+}
+
 footer {
   text-align: center;
+}
+
+ul {
+  padding: 0 24px;
 }
 
 .grid {
