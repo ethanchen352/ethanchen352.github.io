@@ -1,25 +1,46 @@
 :root {
   --black0: #212425;
+  --lightgray0: #D9D9D6;
+  --lightgray1: #C8C9C7;
+  --color-accent: #FBBA72;
+}
+
+::selection {
+  background: var(--color-accent);
 }
 
 body {
   background-color: var(--black0);
   color: white;
+  font-family: 'Open Sans', sans-serif;
 }
 
-footer {
-  text-align: center;
+a {
+  color: white;
+  text-decoration: none;
 }
 
-ul {
-  padding: 0 24px;
+a:hover {
+  color: var(--lightgray0);
 }
 
-.grid {
-  display: grid;
-  grid-template-rows: auto auto auto;
+a:active {
+  color: var(--lightgray1);
+}
+
+ul.horizontal {
+  padding: 0 1em;
+}
+
+ul li {
+  padding: 0 1em;
 }
 
 ul.horizontal li {
   display: inline-block;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: auto auto;
 }

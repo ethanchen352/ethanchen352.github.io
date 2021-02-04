@@ -2,6 +2,23 @@
 <html>
   <head>
     <link rel='stylesheet' href='style.css'>
+    <link rel='preconnect' href='https://fonts.gstatic.com'>
+    <link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap' rel='stylesheet'>
+
+    <style>
+      #greeting {
+        text-align: center;
+        margin: 0;
+        font-size: 72px;
+        font-weight: bold;
+      }
+
+      #title {
+        text-align: center;
+        margin: 0;
+        font-size: 36px;
+      }
+    </style>
   </head>
 
   <body>
@@ -9,7 +26,7 @@
       <div>
           <nav style='float:left;'>
             <ul class='horizontal'>
-              <li>Home</li>
+              <li><a href='index.html'>Home</a></li>
               <li>Resume</li>
             </ul>
           </nav>
@@ -19,12 +36,9 @@
             </ul>
       </div>
       <div>
-        <p>Hi, I'm Ethan.</p>
-      </div>
-      <div>
-        <footer>
-
-        </footer>
+        <p id='greeting'>Hi, I'm Ethan.</p>
+        <p id='title'>&nbsp;<span id='changing_text'></span>&nbsp;</p>
+        <script src="index.js"></script>
       </div>
     </div>
   </body>
