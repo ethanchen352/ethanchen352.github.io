@@ -7,6 +7,7 @@
 
 ::selection {
   background: var(--color-accent);
+  color: var(--black0);
 }
 
 body {
@@ -43,4 +44,8 @@ ul.horizontal li {
 .grid {
   display: grid;
   grid-template-rows: auto auto;
+}
+
+.accented {
+  color: var(--color-accent);
 }
