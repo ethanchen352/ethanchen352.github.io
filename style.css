@@ -2,6 +2,8 @@
   --black0: #212425;
   --lightgray0: #D9D9D6;
   --lightgray1: #C8C9C7;
+  --color-secondary0: #BEE3DB;
+  --color-secondary1: #89B0AE;
   --color-accent: #FBBA72;
 }
 
@@ -27,6 +29,10 @@ a:hover {
 
 a:active {
   color: var(--lightgray1);
+}
+
+h2 {
+  color: var(--color-secondary0);
 }
 
 ul.horizontal {
