@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ethan Chen - Resume</title>
-    <link rel='stylesheet' href='style.css'>
-    <link rel='preconnect' href='https://fonts.gstatic.com'>
-    <link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
-    <div class='grid'>
+    <div class="grid">
       <div>
-        <nav>
-          <ul>
-            <li><a href='index.html'>Home</a></li>
-            <li><span class='currentPage'>Resume</span></li>
-          </ul>
-          <ul>
-            <li><a href='https://www.linkedin.com/in/ethanchen352/' target="_blank">LinkedIn</a></li>
-            <li><a href='https://www.instagram.com/efunchen/' target="_blank">Instagram</a></li>
-          </ul>
-        </nav>
+          <nav style="float:left;">
+            <ul class="horizontal">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="resume.html" class="accented">Resume</a></li>
+            </ul>
+          </nav>
+            <ul class="horizontal" style="float:right;">
+              <li><a href="https://www.linkedin.com/in/ethanchen352/" target="_blank">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/efunchen/" target="_blank">Instagram</a></li>
+            </ul>
       </div>
-
       <div>
-        <div class='clearfix'>
-          <h1 style='float: left;'>Ethan Chen</h1>
-          <div style='float: right; text-align: right'>
-            <p>ethanchen352@gmail.com</p>
-            <p>651-983-6219</p>
-          </div>
-        </div>
+        <h1>Ethan Chen</h1>
+        <p>ethanchen352@gmail.com</p>
+        <p>651-983-6219</p>
         <section>
           <h2>Experience</h2>
           <h3>Intern at Holmes Center for Entrepreneurship | Oct 2019 - present</h3>
@@ -39,13 +35,25 @@
         </section>
         <section>
           <h2>Skills</h2>
-          <p>Python, Java, C, C#, C++, OCaml, ASM</p>
-          <p>HTML, CSS, Drupal</p>
-          <p>Adobe Suite, Affinity Suite</p>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C, C#, C++</li>
+            <li>OCaml</li>
+            <li>ASM</li>
+          </ul>
+          <ul>
+            <li>HTML & CSS</li>
+            <li>Drupal</li>
+          </ul>
+          <ul>
+            <li>Adobe Suite</li>
+            <li>Affinity Suite</li>
+          </ul>
         </section>
         <section>
-        <h2>Academics</h2>
-          <p>University of Minnesota - Twin Cities (expected grad. May 2022)</p>
+          <h2>Academics</h2>
+          <p>University of Minnesota - Twin Cities (expected May 2022)</p>
           <p>BS in Computer Science | Interdisciplinary Design Minor</p>
           <p>Related coursework: Program Design & Development, Algorithms & Data Structures, Intro to Operating Systems</p>
         </section>
@@ -54,7 +62,7 @@
           <ul>
             <li>Algorithmic trading program; written in Python using the Alpaca API</li>
             <li>Battery display written in C, then rewritten in x86 Assembly</li>
-            <li>Complete website redesign for Green Garden Bakery</li>
+            <li>Complete website redesign for Green Garden Bakery with a small team</li>
             <li>AI organism simulation in Unity, written in C#</li>
           </ul>
         </section>
@@ -64,14 +72,7 @@
         </section>
         <section>
           <h2>Activities</h2>
-          <ul>
-            <li>Marching band/Drumline</li>
-            <li>Church leadership</li>
-            <li>Design U</li>
-            <li>Boxing</li>
-            <li>Chinese American Student Association</li>
-          </ul>
-        </section>
+          <p>Marching band/Drumline, Church leadership, Design U, Boxing, Chinese American Student Association</p>
       </div>
     </div>
   </body>

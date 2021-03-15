@@ -1,21 +1,21 @@
 :root {
-  --darkgray0: #25282A;
+  --black0: #212425;
   --lightgray0: #D9D9D6;
   --lightgray1: #C8C9C7;
-  --color-accent: #8FCAB9;
+  --color-secondary0: #BEE3DB;
+  --color-secondary1: #89B0AE;
+  --color-accent: #FBBA72;
 }
 
 ::selection {
   background: var(--color-accent);
+  color: var(--black0);
 }
 
 body {
-  margin: 6em;
-
-  font-family: 'Open Sans', sans-serif;
-
-  background-color: var(--darkgray0);
+  background-color: var(--black0);
   color: white;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -31,53 +31,27 @@ a:active {
   color: var(--lightgray1);
 }
 
-nav {
-  position: fixed;
-  bottom: 50%;
-}
-
-nav ul {
-  padding: 0em;
-
-  list-style-type: none;
-  font-size: 1.5em;
-}
-
-h1 {
-  margin: 0em;
-
-  font-size: 4em;
-}
-
 h2 {
-  margin: 0.25em 0em;
-
-  font-size: 2em;
-  color: var(--color-accent);
+  color: var(--color-secondary0);
 }
 
-h3 {
-  margin: 0.125em 0em;
-
-  font-size: 1.5em;
+ul.horizontal {
+  padding: 0 1em;
 }
 
-section {
-  margin: 2em 1em;
+ul li {
+  padding: 0 1em;
+}
+
+ul.horizontal li {
+  display: inline-block;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  gap: 3em;
+  grid-template-rows: auto auto;
 }
 
-.currentPage {
+.accented {
   color: var(--color-accent);
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
 }
