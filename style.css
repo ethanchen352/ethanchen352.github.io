@@ -19,6 +19,12 @@ body {
 }
 
 a {
+  color: var(--color-secondary1);
+  text-decoration: none;
+}
+
+
+nav a {
   color: white;
   text-decoration: none;
 }
