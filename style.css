@@ -55,7 +55,14 @@ ul.horizontal li {
 
 .grid {
   display: grid;
+}
+
+.main {
   grid-template-rows: auto auto;
+}
+
+.three-columns {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .accented {
