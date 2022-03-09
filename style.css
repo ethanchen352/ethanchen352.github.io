@@ -65,6 +65,16 @@ ul.horizontal li {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.middle-third {
+  grid-column: 1 / 4;
+}
+
 .accented {
   color: var(--color-accent);
+}
+
+@media only screen and (min-width: 1024px) {
+  .middle-third {
+    grid-column: 2 / 3;
+  }
 }
