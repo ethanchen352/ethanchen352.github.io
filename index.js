@@ -22,6 +22,6 @@ function typeText(newText) {
   }
 }
 
-let titles = ["Creator", "Graphic Designer", "Coder", "Video Editor", "Web Developer", "Procrastinator", "Student @ U of MN", "Logo Designer", "Freelancer", ":)", "Game Developer"];
+let titles = ["Creator", "Graphic Designer", "Coder", "Video Editor", "Web Developer", "Student @ U of MN", ":)", "Game Developer"];
 
 eraseText();
