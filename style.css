@@ -1,25 +1,23 @@
 :root {
-  --black0: #212425;
-  --lightgray0: #D9D9D6;
-  --lightgray1: #C8C9C7;
-  --color-secondary0: #BEE3DB;
-  --color-secondary1: #89B0AE;
-  --color-accent: #FBBA72;
+  --color-black: #212425;
+  --color-lightgray: #D9D9D6;
+  --color-lightgray-dim: #C8C9C7;
+  --color-accent: #82a89f;
 }
 
 ::selection {
   background: var(--color-accent);
-  color: var(--black0);
+  color: var(--color-black);
 }
 
 body {
-  background-color: var(--black0);
+  background-color: var(--color-black);
   color: white;
   font-family: 'Open Sans', sans-serif;
 }
 
 a {
-  color: var(--color-secondary1);
+  color: var(--color-accent);
   text-decoration: none;
 }
 
@@ -30,15 +28,15 @@ nav a {
 }
 
 a:hover {
-  color: var(--lightgray0);
+  color: var(--color-lightgray);
 }
 
 a:active {
-  color: var(--lightgray1);
+  color: var(--color-lightgray-dim);
 }
 
 h2 {
-  color: var(--color-secondary0);
+  color: var(--color-accent);
 }
 
 ul.horizontal {
@@ -61,20 +59,10 @@ ul.horizontal li {
   grid-template-rows: auto auto;
 }
 
-.three-columns {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.middle-third {
-  grid-column: 1 / 4;
+.body-text {
+  grid-template-columns: 1fr minmax(48ch, 72ch) 1fr;
 }
 
 .accented {
   color: var(--color-accent);
-}
-
-@media only screen and (min-width: 1024px) {
-  .middle-third {
-    grid-column: 2 / 3;
-  }
 }
