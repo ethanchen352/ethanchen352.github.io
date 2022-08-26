@@ -60,7 +60,7 @@ ul.horizontal li {
 }
 
 .body-text {
-  grid-template-columns: 1fr minmax(48ch, 72ch) 1fr;
+  grid-template-columns: 1fr minmax(auto, 72ch) 1fr;
 }
 
 .accented {
