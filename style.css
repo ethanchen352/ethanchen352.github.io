@@ -1,68 +1,81 @@
 :root {
-  --color-black: #212425;
-  --color-lightgray: #D9D9D6;
-  --color-lightgray-dim: #C8C9C7;
-  --color-accent: #82a89f;
+  --eerie-black: #1A1A1A;
+  --floral-white: #FFFAF2;
+  --isabelline: #F2EDE6;
+  --jet: #333333;
+  --platinum: #E6E6E6;
+  --timberwolf: #CCC8C2;
+
+  --color-bg: var(--isabelline);
+  --color-primary: var(--eerie-black);
+  --color-secondary: var(--timberwolf);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: var(--eerie-black);
+    --color-primary: var(--isabelline);
+  }
+}
+
+:root {
+  font-family: 'Space Grotesk', monospace;
+  font-size: 2em;
 }
 
 ::selection {
-  background: var(--color-accent);
-  color: var(--color-black);
-}
-
-body {
-  background-color: var(--color-black);
-  color: white;
-  font-family: 'Open Sans', sans-serif;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
 }
 
 a {
-  color: var(--color-accent);
+  color: var(--color-primary);
+  opacity: 0.75;
+  position: relative;
   text-decoration: none;
+  transition: opacity 0.25s;
 }
 
+a::after {
+  --size: 0.08em;
 
-nav a {
-  color: white;
-  text-decoration: none;
+  content: "";
+  position: absolute;
+  bottom: calc(-1 * var(--size));
+  left: 50%;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--color-primary);
+  transform: translateX(-50%);
+  transition: width 0.25s;
 }
 
 a:hover {
-  color: var(--color-lightgray);
+  opacity: 1;
 }
 
-a:active {
-  color: var(--color-lightgray-dim);
+a:hover::after {
+  width: 100%;
 }
 
-h2 {
-  color: var(--color-accent);
+body {
+  background: var(--color-bg);
+  color: var(--color-primary);
 }
 
-ul.horizontal {
-  padding: 0 1em;
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0em;
 }
 
-ul li {
-  padding: 0 1em;
+li {
+  margin: 0.5em 1em;
 }
 
-ul.horizontal li {
-  display: inline-block;
-}
-
-.grid {
-  display: grid;
-}
-
-.main {
-  grid-template-rows: auto auto;
-}
-
-.body-text {
-  grid-template-columns: 1fr minmax(auto, 72ch) 1fr;
-}
-
-.accented {
-  color: var(--color-accent);
+#greeting {
+  font-weight: normal;
+  text-align: center;
 }
