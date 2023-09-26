@@ -30,24 +30,24 @@
 
 a {
   color: var(--color-primary);
-  opacity: 0.75;
+  opacity: 0.6;
   position: relative;
   text-decoration: none;
-  transition: opacity 0.25s;
+  transition: opacity 1s;
 }
 
 a::after {
-  --size: 0.08em;
+  --size: 2px;
 
   content: "";
   position: absolute;
   bottom: calc(-1 * var(--size));
   left: 50%;
-  width: var(--size);
+  width: 0px;
   height: var(--size);
   background-color: var(--color-primary);
   transform: translateX(-50%);
-  transition: width 0.25s;
+  transition: width 1s;
 }
 
 a:hover {
